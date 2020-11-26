@@ -40,16 +40,16 @@ function setup() {
   //fourth tier
   block16 = new Box(590, 355, 30, 40);
 
-  polygon = new Polygon(50,200,20);
+  polygon = new Polygon(200,200,50);
 
-  slingshot = new SlingShot(polygon.body, {x:100, y:400});
+  slingshot = new SlingShot(polygon.body, {x:200, y:200});
 
 
 }
 
 function draw() {
   console.log(slingshot);
-  background("grey");
+  background("white");
   Engine.update(engine);
 
   ground1.display();

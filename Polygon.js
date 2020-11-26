@@ -1,7 +1,7 @@
 class Polygon{
     constructor(x,y,radius) {
         var options = {
-            isStatic: true,
+            isStatic: false,
             //restitution:0,
             //friction:1,
         }
@@ -18,7 +18,7 @@ class Polygon{
         translate(pos.x, pos.y);
         imageMode(CENTER);
         //ellipseMode(RADIUS);
-        image(this.image, pos.x, pos.y, 60, 60);
+        image(this.image, 0, 0, this.r, this.r);
         pop();
     }
 }
